@@ -116,3 +116,17 @@ const graph = createGraph('./example/entry.js');
 const result = bundle(graph);
 
 console.log(result);
+
+const webpackMini = function(filename, extname) {
+	const graph = createGraph(filename);
+	const result = bundle(graph);
+	
+	fs.writeFileSync(extname, result, (err) => {
+	  if (err) throw err;
+	  console.log('The file has been saved!');
+	});
+}
+
+exports.webpackMini = webpackMini
+
+

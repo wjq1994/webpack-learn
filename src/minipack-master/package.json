@@ -5,7 +5,7 @@
   "author": "ruikunai",
   "license": "MIT",
   "scripts": {
-    "start": "node src/minipack.js"
+    "start": "node src/start.js"
   },
   "dependencies": {
     "babel-core": "6.26.0",
