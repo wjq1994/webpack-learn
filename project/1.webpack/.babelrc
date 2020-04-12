@@ -1,0 +1,11 @@
+{
+    "presets": [
+        ["@babel/preset-env",{
+            "corejs":2,
+            "useBuiltIns": "usage" //选择性的使用
+        }]
+    ],
+    "plugins": [
+       "@babel/plugin-transform-runtime"  //* 不会污染全局变量 * 多次使用只会打包一次* 依赖统一按需引入,无重复引入,无多余引入
+    ]
+}
