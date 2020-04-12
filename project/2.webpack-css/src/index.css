@@ -1,0 +1,9 @@
+@import 'a.css';
+
+body {
+    background: blue;
+}
+
+::placeholder {
+    color: gray;
+  }
