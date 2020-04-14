@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/a.js":
-/*!******************!*\
-  !*** ./src/a.js ***!
-  \******************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('a.js  $', jquery__WEBPACK_IMPORTED_MODULE_0___default.a);\n\n//# sourceURL=webpack:///./src/a.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -106,7 +94,40 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\n\n__webpack_require__(/*! ./a.js */ \"./src/a.js\");\n\nconsole.log('index.js  $', jquery__WEBPACK_IMPORTED_MODULE_0___default.a);\nconsole.log('index.js  window.$', window.$);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index0_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index0.js */ \"./src/index0.js\");\n/* harmony import */ var _index0_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index0_js__WEBPACK_IMPORTED_MODULE_1__);\n\nconsole.log(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);\nconsole.log(window.$.aaa = \"1111\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/index0.js":
+/*!***********************!*\
+  !*** ./src/index0.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./index1.js */ \"./src/index1.js\");\n\n__webpack_require__(/*! ./index2.js */ \"./src/index2.js\");\n\nwindow.ccc = 123456;\nconsole.log('index页面 ', $);\nconsole.log('index页面 window.$ ', window.$);\nconsole.log('index页面 window.bbb', window.bbb);\n\n//# sourceURL=webpack:///./src/index0.js?");
+
+/***/ }),
+
+/***/ "./src/index1.js":
+/*!***********************!*\
+  !*** ./src/index1.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./index.js */ \"./src/index.js\");\n\nvar aa = 1111;\nwindow.bbb = 7777;\nconsole.log('index1页面 window.ccc', window.ccc); //undefined\n\nmodule.exports = aa;\n\n//# sourceURL=webpack:///./src/index1.js?");
+
+/***/ }),
+
+/***/ "./src/index2.js":
+/*!***********************!*\
+  !*** ./src/index2.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var aa = 1111;\nwindow.bbb = 6666;\nmodule.exports = aa;\n\n//# sourceURL=webpack:///./src/index2.js?");
 
 /***/ }),
 

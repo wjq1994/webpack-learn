@@ -5,6 +5,7 @@
 - css-loader
 - style-loader
 - mini-css-extract-plugin (压缩css文件，优化打包体积)
+- purgecss-webpack-plugin + glob
 
 > postcss-loader
 
@@ -108,7 +109,12 @@ module.exports = {
 }
 ```
 
+> purgecss-webpack-plugin + glob
+
+清除文件里没有用到的css
+
+
 ### 注意
 
-1. loader顺序
+1. loader顺序 
 2. css-loader -> options -> importLoaders

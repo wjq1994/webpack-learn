@@ -1,3 +1,5 @@
-import $ from 'jquery'
+const aa = 666;
 
-console.log('a.js  $', $);
+window.bbb = 66666;
+
+module.exports =aa;
