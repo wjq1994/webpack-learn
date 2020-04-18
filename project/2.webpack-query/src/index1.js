@@ -1,4 +1,4 @@
-require('./index.js')
+require('./index0.js')
 const aa = 1111;
 
 window.bbb = 7777;
