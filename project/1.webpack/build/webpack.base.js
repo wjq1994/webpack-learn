@@ -39,7 +39,7 @@ module.exports = (env) => { // webpack 配置文件可以到出一个函数 函�
         // babel  @babel/core(提供转化的方法)  @babel/preset-env(es6-es5)   babel-loader(用babel来处理)
         module: { // 要处理模块
             rules: [ // 默认loader的执行顺序是 右边往左边 从下到上
-                {test:/\.png|jpg|eot|vue|jsx|ts/}
+                {test:/\.png|jpg|eot|vue|jsx|ts/},
                 {
                     test: /\.js$/,
                     use: 'eslint-loader', // eslint 默认可以使用eslint --init来生成配置文件
