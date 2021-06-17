@@ -28,6 +28,6 @@
   "dependencies": {
     "css-selector-tokenizer": "^0.7.1",
     "less": "^3.10.3",
-    "postcss": "^7.0.24"
+    "postcss": "^7.0.36"
   }
 }
