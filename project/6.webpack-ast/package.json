@@ -20,7 +20,7 @@
     "esprima": "^4.0.1",
     "estraverse": "^4.3.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "lodash": "^4.17.15"
